@@ -1,3 +1,12 @@
+# 🍳 CookinKnowledge 101 — SaintSal™ is Cookin'
+
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Last Commit](https://img.shields.io/github/last-commit/Saint-Visions/CookinKnowledge-101-Saintsal-Cookin)
+![Contributors](https://img.shields.io/github/contributors/Saint-Visions/CookinKnowledge-101-Saintsal-Cookin)
+![Deploy](https://img.shields.io/badge/deploy-live-brightgreen?logo=vercel&link=https://saint-vision-ai-hacp-saint-sal-clea.vercel.app)
+
+> Built with ❤️ by SaintVisionAI — powered by GPT-4o, Azure, HACP™, and PartnerTech™.
+
 Welcome to the official repo powering **SaintVisionAI™** — an elite AI workspace that blends OpenAI, Azure, and CRM tools into one seamless platform. Built with clarity, creativity, and confidence.
 
 ## 🔥 Live Preview
