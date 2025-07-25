@@ -12,10 +12,11 @@ interface PipelineStep {
 
 export default function SmartPipeline() {
   const [steps] = useState<PipelineStep[]>([
-    { id: '1', title: 'Lead Capture', status: 'completed', description: 'AI identifies and qualifies leads', automated: true },
-    { id: '2', title: 'Content Generation', status: 'active', description: 'Creating personalized outreach', automated: true },
-    { id: '3', title: 'CRM Integration', status: 'pending', description: 'Sync with PartnerTech.ai', automated: true },
-    { id: '4', title: 'Follow-up Sequence', status: 'pending', description: 'Automated nurture campaign', automated: true }
+    { id: '1', title: 'Cognitive Analysis', status: 'completed', description: 'Azure AI processes your business context', automated: true },
+    { id: '2', title: 'Smart Strategy', status: 'active', description: 'Generating personalized action plans', automated: true },
+    { id: '3', title: 'Workflow Optimization', status: 'pending', description: 'Automating your success patterns', automated: true },
+    { id: '4', title: 'Intelligence Integration', status: 'pending', description: 'Seamless productivity amplification', automated: true },
+    { id: '5', title: 'Growth Acceleration', status: 'pending', description: 'Scale with cognitive intelligence', automated: true }
   ]);
 
   const getStatusColor = (status: string) => {

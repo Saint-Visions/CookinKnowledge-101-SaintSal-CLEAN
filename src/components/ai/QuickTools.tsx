@@ -13,12 +13,14 @@ interface Tool {
 
 export default function QuickTools() {
   const [tools] = useState<Tool[]>([
-    { id: '1', name: 'Content Writer', icon: '✍️', description: 'AI content generation', category: 'ai', premium: false },
-    { id: '2', name: 'Image Generator', icon: '🎨', description: 'Create stunning visuals', category: 'creative', premium: true },
-    { id: '3', name: 'CRM Sync', icon: '🔄', description: 'PartnerTech integration', category: 'business', premium: false },
-    { id: '4', name: 'Strategy Advisor', icon: '🧠', description: 'Business intelligence', category: 'ai', premium: true },
-    { id: '5', name: 'Email Builder', icon: '📧', description: 'Smart email campaigns', category: 'business', premium: false },
-    { id: '6', name: 'Code Assistant', icon: '⚡', description: 'Development helper', category: 'ai', premium: true }
+    { id: '1', name: 'Cognitive Writer', icon: '🧠', description: 'Azure-powered content intelligence', category: 'ai', premium: false },
+    { id: '2', name: 'Visual Creator', icon: '🎨', description: 'AI-driven visual storytelling', category: 'creative', premium: true },
+    { id: '3', name: 'Workflow Sync', icon: '⚡', description: 'Intelligent process automation', category: 'business', premium: false },
+    { id: '4', name: 'Strategy Brain', icon: '🎯', description: 'Cognitive business intelligence', category: 'ai', premium: true },
+    { id: '5', name: 'Communication Hub', icon: '�', description: 'Smart messaging & outreach', category: 'business', premium: false },
+    { id: '6', name: 'Code Companion', icon: '👨‍💻', description: 'AI development partner', category: 'ai', premium: true },
+    { id: '7', name: 'Knowledge Mapper', icon: '🗺️', description: 'Cognitive knowledge organization', category: 'ai', premium: false },
+    { id: '8', name: 'Productivity Oracle', icon: '⏰', description: 'Time & energy optimization', category: 'business', premium: true }
   ]);
 
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'ai' | 'business' | 'creative'>('all');
