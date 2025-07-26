@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 interface ChatMessage {
   id: number;
@@ -221,6 +222,7 @@ export default function SaintGPTWorkspace() {
           </div>
         </div>
       </div>
+      <GlobalFooter />
     </div>
   );
 }

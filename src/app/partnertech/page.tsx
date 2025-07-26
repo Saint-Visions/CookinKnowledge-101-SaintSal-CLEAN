@@ -1,32 +1,36 @@
 'use client';
 
 import { useState } from 'react';
+import TopNav from "@/components/TopNav";
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function PartnerTechDashboard() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      {/* Header */}
-      <header className="bg-[#1a1f36] border-b border-gray-700 px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SV</span>
+    <>
+      <TopNav />
+      <div className="min-h-screen bg-black text-white">
+        {/* Header */}
+        <header className="bg-gray-900/60 border-b border-gray-700 pt-24 pb-4 px-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">SV</span>
+                </div>
+                <div>
+                  <h1 className="text-white font-semibold">SaintVisionAI™</h1>
+                  <p className="text-xs text-gray-400">Build 5.0 • Pro</p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-white font-semibold">SaintVisionAI™</h1>
-                <p className="text-xs text-gray-400">Build 5.0 • Pro</p>
+              
+              <div className="text-2xl font-bold text-white">PartnerTech.ai</div>
+              <div className="bg-blue-500 text-white px-2 py-1 rounded text-xs font-medium">CRM</div>
+              
+              <div className="flex items-center space-x-4 ml-8">
+                <div className="text-sm text-green-400">CookinKnowledge</div>
+                <div className="text-xs text-gray-400">Powered by GoHighLevel + HACP™</div>
               </div>
             </div>
-            
-            <div className="text-2xl font-bold text-white">PartnerTech.ai</div>
-            <div className="bg-blue-500 text-white px-2 py-1 rounded text-xs font-medium">CRM</div>
-            
-            <div className="flex items-center space-x-4 ml-8">
-              <div className="text-sm text-green-400">CookinKnowledge</div>
-              <div className="text-xs text-gray-400">Powered by GoHighLevel + HACP™</div>
-            </div>
-          </div>
 
           <nav className="flex items-center space-x-6">
             <button className="bg-blue-500 text-white px-4 py-2 rounded-md font-medium">
@@ -275,6 +279,7 @@ export default function PartnerTechDashboard() {
           </div>
         </div>
       </div>
-    </div>
+      <GlobalFooter />
+    </>
   );
 }

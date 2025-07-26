@@ -1,15 +1,17 @@
 'use client';
 
 import { useState } from 'react';
+import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
-export default function WarRoom() {
+export default function Workspace() {
   const [userTier, setUserTier] = useState('pro');
   const [chatInput, setChatInput] = useState('');
 
   return (
     <>
-    <div className="min-h-screen bg-black text-white flex">
+    <TopNav />
+    <div className="min-h-screen bg-black text-white flex pt-20">
       {/* Left Sidebar - Cookin' Knowledge Branding */}
       <div className="w-72 bg-gray-900 border-r border-yellow-400/20 flex flex-col">
         {/* Sidebar Header */}
@@ -33,21 +35,21 @@ export default function WarRoom() {
             <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse ml-auto"></div>
           </div>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/dashboard" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-blue-400 text-lg">💼</span>
             <span className="text-gray-200">My Business</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/data" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-green-400 text-lg">📝</span>
             <span className="text-gray-200">Sticky Notes</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/help" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-purple-400 text-lg">🔧</span>
             <span className="text-gray-200">AI Tools</span>
             <span className="text-xs bg-yellow-400/20 text-yellow-400 px-2 py-1 rounded-full ml-auto font-bold">⚡</span>
-          </div>
+          </a>
 
           <a href="/builder-ultimate" className="flex items-center space-x-3 p-4 rounded-xl bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-red-500/20 border border-yellow-400/40 hover:bg-yellow-500/30 transition-all cursor-pointer">
             <span className="text-yellow-400 text-lg">👑</span>
@@ -61,49 +63,49 @@ export default function WarRoom() {
             <span className="text-xs bg-purple-400/20 text-purple-400 px-2 py-1 rounded-full ml-auto font-bold">FIGMA</span>
           </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/svg" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-pink-400 text-lg">🖼️</span>
             <span className="text-gray-200">Image Generator</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/svg" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-cyan-400 text-lg">🚀</span>
             <span className="text-gray-200">SVG Launchpad</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/help" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-orange-400 text-lg">💡</span>
             <span className="text-gray-200">Feedback & Help</span>
-          </div>
+          </a>
 
           <div className="border-t border-yellow-400/20 my-4"></div>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-yellow-400/10 border border-yellow-400/30 hover:bg-yellow-400/20 transition-all cursor-pointer">
+          <a href="/partnertech" className="flex items-center space-x-3 p-4 rounded-xl bg-yellow-400/10 border border-yellow-400/30 hover:bg-yellow-400/20 transition-all cursor-pointer">
             <span className="text-yellow-400 text-lg">🚀</span>
             <span className="text-yellow-400 font-bold">PartnerTech.ai CRM</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/dashboard" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-indigo-400 text-lg">👥</span>
             <span className="text-gray-200">Client Portal</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-orange-500/10 border border-orange-500/30 hover:bg-orange-500/20 transition-all cursor-pointer">
+          <a href="/pricing" className="flex items-center space-x-3 p-4 rounded-xl bg-orange-500/10 border border-orange-500/30 hover:bg-orange-500/20 transition-all cursor-pointer">
             <span className="text-orange-400 text-lg">⚡</span>
             <span className="text-orange-400 font-bold">Upgrade Tier</span>
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/institute" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-emerald-400 text-lg">🏛️</span>
             <span className="text-gray-200 text-sm">SVT Institute of AI (R + D)</span>
-          </div>
+          </a>
 
           <div className="border-t border-yellow-400/20 my-4"></div>
 
-          <div className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
+          <a href="/dashboard" className="flex items-center space-x-3 p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 transition-all cursor-pointer">
             <span className="text-gray-400 text-lg">⚙️</span>
             <span className="text-gray-200">My Account</span>
-          </div>
+          </a>
         </div>
 
         {/* Sidebar Footer */}
@@ -226,22 +228,22 @@ export default function WarRoom() {
                   ⚡ CRM Quick Access
                 </h4>
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
+                  <a href="/partnertech" className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
                     <span className="text-cyan-400 text-lg">📋</span>
                     <span className="text-gray-200">GHL Dashboard</span>
-                  </div>
-                  <div className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
+                  </a>
+                  <a href="/dashboard" className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
                     <span className="text-green-400 text-lg">👥</span>
                     <span className="text-gray-200">Contacts</span>
-                  </div>
-                  <div className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
+                  </a>
+                  <a href="/dashboard" className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
                     <span className="text-yellow-400 text-lg">📅</span>
                     <span className="text-gray-200">Calendar</span>
-                  </div>
-                  <div className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
+                  </a>
+                  <a href="/dashboard" className="flex items-center space-x-3 p-3 hover:bg-yellow-400/10 rounded-lg cursor-pointer transition-all">
                     <span className="text-purple-400 text-lg">🔄</span>
                     <span className="text-gray-200">Pipeline</span>
-                  </div>
+                  </a>
                 </div>
               </div>
 

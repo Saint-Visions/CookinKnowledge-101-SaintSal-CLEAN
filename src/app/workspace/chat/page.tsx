@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import TopNav from "@/components/TopNav";
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function ChatPage() {
   const [messages, setMessages] = useState([
@@ -37,7 +39,9 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+    <>
+      <TopNav />
+      <div className="min-h-screen bg-black text-white relative overflow-hidden pt-20">
       {/* Subtle Background */}
       <div className="fixed inset-0 opacity-[0.02] pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -130,6 +134,7 @@ export default function ChatPage() {
           </div>
         </div>
       </div>
-    </div>
+      <GlobalFooter />
+    </>
   );
 }

@@ -1,14 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function BuilderPage() {
   return (
-    <>
-    <TopNav />
-    <div className="min-h-screen bg-gray-900 text-white pt-20">
+    <div className="min-h-screen bg-gray-900 text-white">
       <div className="bg-gray-800/60 backdrop-blur-xl border-b border-gray-700 p-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-6">
@@ -52,6 +49,5 @@ export default function BuilderPage() {
 
       <GlobalFooter />
     </div>
-    </>
   );
 }
