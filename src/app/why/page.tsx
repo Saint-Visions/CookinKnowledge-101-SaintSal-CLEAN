@@ -1,53 +1,53 @@
 'use client';
 
-import GlobalHeader from '@/components/layout/GlobalHeader';
+import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function WhyUsPage() {
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* Apple-Style Background with Saint Vision Branding */}
-      <div className="fixed inset-0 z-0">
-        {/* Dynamic gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
-        
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-[0.02]" 
-             style={{
-               backgroundImage: "url('/images/transparent dawg saintsaltm cookin knowledge  copy.png')",
-               backgroundSize: "400px",
-               backgroundRepeat: "repeat",
-               backgroundPosition: "center"
-             }}>
-        </div>
-        
-        {/* Apple-style glass morphism elements */}
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-gold/5 to-orange-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-gold/3 to-purple-500/3 rounded-full blur-3xl"></div>
-      </div>
-
-      <GlobalHeader currentPage="why" />
-
-      {/* Hero Section - Apple Style */}
-      <main className="relative z-10 pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
+    <>
+      <TopNav />
+      <main className="min-h-screen bg-black text-white relative overflow-hidden">
+        {/* Apple-Style Background with Saint Vision Branding */}
+        <div className="fixed inset-0 z-0">
+          {/* Dynamic gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
           
-          {/* Main Hero */}
-          <div className="text-center mb-32">
-            <div className="mb-8">
-              <span className="inline-flex items-center bg-gold/10 text-gold px-6 py-3 rounded-full text-sm font-medium border border-gold/20 backdrop-blur-sm">
-                <span className="mr-2">🏆</span>
-                What Separates SaintVisionAI™
-              </span>
-            </div>
+          {/* Subtle pattern overlay */}
+          <div className="absolute inset-0 opacity-[0.02]" 
+               style={{
+                 backgroundImage: "url('/images/transparent dawg saintsaltm cookin knowledge  copy.png')",
+                 backgroundSize: "400px",
+                 backgroundRepeat: "repeat",
+                 backgroundPosition: "center"
+               }}>
+          </div>
+          
+          {/* Apple-style glass morphism elements */}
+          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-yellow-400/5 to-orange-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-yellow-400/3 to-purple-500/3 rounded-full blur-3xl"></div>
+        </div>
+
+        {/* Hero Section - Apple Style */}
+        <section className="relative z-10 pt-32 pb-16">
+          <div className="max-w-7xl mx-auto px-6">
             
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-thin text-white mb-8 tracking-tight leading-none">
-              Because your business
-              <br />
-              <span className="bg-gradient-to-r from-gold via-yellow-400 to-orange-500 bg-clip-text text-transparent font-extralight">
-                deserves AI
-              </span>
+            {/* Main Hero */}
+            <div className="text-center mb-32">
+              <div className="mb-8">
+                <span className="inline-flex items-center bg-yellow-400/10 text-yellow-400 px-6 py-3 rounded-full text-sm font-medium border border-yellow-400/20 backdrop-blur-sm">
+                  <span className="mr-2">🏆</span>
+                  What Separates SaintVisionAI™
+                </span>
+              </div>
+              
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-thin text-white mb-8 tracking-tight leading-none">
+                Because your business
+                <br />
+                <span className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent font-extralight">
+                  deserves AI
+                </span>
               <br />
               <span className="text-4xl md:text-5xl lg:text-6xl text-gray-400 font-light">
                 that actually makes sense
@@ -335,9 +335,10 @@ export default function WhyUsPage() {
           </div>
 
         </div>
+        </section>
       </main>
 
-      <GlobalFooter currentPage="why" />
-    </div>
+      <GlobalFooter />
+    </>
   );
 }

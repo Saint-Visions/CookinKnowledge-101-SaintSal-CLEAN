@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function ChatGPTPage() {

@@ -1,52 +1,71 @@
+import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function HelpPage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <div className="bg-gray-800/60 backdrop-blur-xl border-b border-gray-700 p-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg">
-                <span className="text-2xl">❓</span>
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-white">Help Center</h1>
-                <p className="text-gray-400">Support and documentation</p>
+    <>
+      <TopNav />
+      <main className="min-h-screen bg-black text-white">
+        <div className="bg-gray-900/60 backdrop-blur-xl border-b border-gray-700 pt-32 pb-8 px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg">
+                  <span className="text-2xl">❓</span>
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold text-white">Help Center</h1>
+                  <p className="text-gray-400">Support and documentation</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="max-w-6xl mx-auto p-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700">
-            <h2 className="text-2xl font-bold mb-4">Getting Started</h2>
-            <ul className="space-y-3 text-gray-300">
-              <li>• Create your account</li>
-              <li>• Set up your workspace</li>
-              <li>• Configure integrations</li>
-              <li>• Start building</li>
-            </ul>
+        <div className="max-w-6xl mx-auto p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700">
+              <h2 className="text-2xl font-bold mb-4">Getting Started</h2>
+              <ul className="space-y-3 text-gray-300">
+                <li>• Create your account</li>
+                <li>• Set up your workspace</li>
+                <li>• Configure integrations</li>
+                <li>• Start building</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700">
+              <h2 className="text-2xl font-bold mb-4">Support</h2>
+              <ul className="space-y-3 text-gray-300">
+                <li>• Email: support@saintvision.ai</li>
+                <li>• Live chat available 24/7</li>
+                <li>• Documentation portal</li>
+                <li>• Community forums</li>
+              </ul>
+            </div>
           </div>
-          
-          <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700">
-            <h2 className="text-2xl font-bold mb-4">Support</h2>
-            <ul className="space-y-3 text-gray-300">
-              <li>• Email: support@saintvision.ai</li>
-              <li>• Live chat available 24/7</li>
-              <li>• Documentation portal</li>
-              <li>• Community forums</li>
-            </ul>
+
+          <div className="mt-8 bg-gray-800/50 rounded-2xl p-8 border border-gray-700 text-center">
+            <h2 className="text-2xl font-bold mb-4">Need More Help?</h2>
+            <p className="text-gray-300 mb-6">
+              Our support team is here to help you succeed with SaintVision AI.
+            </p>
+            
+            <div className="flex justify-center gap-4">
+              <button className="bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-xl font-medium transition-all">
+                Contact Support
+              </button>
+              <button className="border border-gray-600 hover:border-gray-400 text-white px-6 py-3 rounded-xl font-medium transition-all">
+                View Documentation
+              </button>
+            </div>
           </div>
         </div>
-
-        <div className="mt-8 bg-gray-800/50 rounded-2xl p-8 border border-gray-700 text-center">
-          <h2 className="text-2xl font-bold mb-4">Need More Help?</h2>
-          <p className="text-gray-300 mb-6">
-            Our support team is here to help you succeed with SaintVision AI.
-          </p>
+      </main>
+      <GlobalFooter />
+    </>
+  );
+}
           
           <div className="flex justify-center gap-4">
             <a href="mailto:support@saintvision.ai" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-6 py-3 rounded-xl font-semibold transition-all">

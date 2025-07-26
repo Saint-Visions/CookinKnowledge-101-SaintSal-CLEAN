@@ -1,23 +1,26 @@
 'use client';
 
+import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <div className="bg-gray-800/60 backdrop-blur-xl border-b border-gray-700 p-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
-                <span className="text-2xl">📊</span>
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-white">Dashboard</h1>
-                <p className="text-gray-400">Analytics and insights</p>
+    <>
+      <TopNav />
+      <main className="min-h-screen bg-black text-white">
+        <div className="bg-gray-900/60 backdrop-blur-xl border-b border-gray-700 pt-32 pb-8 px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                  <span className="text-2xl">📊</span>
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold text-white">Dashboard</h1>
+                  <p className="text-gray-400">Analytics and insights</p>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
 
@@ -51,9 +54,11 @@ export default function DashboardPage() {
             </a>
           </div>
         </div>
-      </div>
+      </main>
 
       <GlobalFooter />
-    </div>
+    </>
+  );
+}
   );
 }

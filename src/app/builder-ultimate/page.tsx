@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import TopNav from "@/components/TopNav";
 import BuilderWrapper from '@/components/builder/BuilderComponent';
 import GlobalFooter from '@/components/layout/GlobalFooter';
 
@@ -94,19 +95,21 @@ export default function UltimateBuilderDashboard() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* ENTERPRISE HEADER */}
-      <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-yellow-400/20 p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-500 flex items-center justify-center shadow-xl shadow-yellow-400/30">
-              <span className="text-black font-bold text-xl">🎨</span>
+    <>
+      <TopNav />
+      <main className="min-h-screen bg-black text-white">
+        {/* ENTERPRISE HEADER */}
+        <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-yellow-400/20 pt-24 pb-6 px-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-500 flex items-center justify-center shadow-xl shadow-yellow-400/30">
+                <span className="text-black font-bold text-xl">🎨</span>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-white">ULTIMATE Builder.io Dashboard</h1>
+                <p className="text-yellow-400 text-sm font-medium">SAINTSAL™ COOKIN' KNOWLEDGE ENTERPRISE</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-3xl font-bold text-white">ULTIMATE Builder.io Dashboard</h1>
-              <p className="text-yellow-400 text-sm font-medium">SAINTSAL™ COOKIN' KNOWLEDGE ENTERPRISE</p>
-            </div>
-          </div>
           <div className="flex items-center space-x-4">
             <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-black px-4 py-2 rounded-lg font-bold text-sm">
               {builderStatus === 'enterprise-ready' ? '🔥 ENTERPRISE ACTIVE' : '⏳ LOADING...'}
@@ -325,8 +328,9 @@ export default function UltimateBuilderDashboard() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <GlobalFooter />
-    </div>
+    </>
   );
+}
 }
