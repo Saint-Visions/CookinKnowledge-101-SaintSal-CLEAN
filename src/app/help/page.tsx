@@ -1,5 +1,4 @@
 import TopNav from "@/components/TopNav";
-import GlobalFooter from '@/components/layout/GlobalFooter';
 import Link from 'next/link';
 import GlobalFooter from "@/components/GlobalFooter";
 
