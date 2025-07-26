@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function ChatGPTPage() {
   const [messages, setMessages] = useState([
@@ -145,6 +146,7 @@ export default function ChatGPTPage() {
           </div>
         </div>
       </div>
+      <GlobalFooter />
     </div>
   );
 }

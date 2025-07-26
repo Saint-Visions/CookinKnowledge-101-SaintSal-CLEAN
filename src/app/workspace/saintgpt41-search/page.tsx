@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 interface SearchResult {
   id: number;
@@ -224,6 +225,7 @@ export default function SaintGpt41Search() {
           <span className="text-black text-xl">🤖</span>
         </div>
       </div>
+      <GlobalFooter />
     </div>
   );
 }

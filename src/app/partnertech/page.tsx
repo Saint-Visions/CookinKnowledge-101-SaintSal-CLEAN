@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function PartnerTechDashboard() {
   return (
@@ -275,6 +276,7 @@ export default function PartnerTechDashboard() {
           </div>
         </div>
       </div>
+      <GlobalFooter />
     </div>
   );
 }

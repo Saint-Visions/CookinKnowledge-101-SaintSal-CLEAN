@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function CookinKnowledgeHomepage() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -43,6 +44,7 @@ export default function CookinKnowledgeHomepage() {
   ];
 
   return (
+    <>
     <div className="min-h-screen bg-black text-white overflow-hidden">
       {/* HERO SECTION - THE REAL DEAL */}
       <section className="relative min-h-screen flex items-center justify-center">
@@ -367,5 +369,6 @@ export default function CookinKnowledgeHomepage() {
 
       <GlobalFooter />
     </div>
+    </>
   );
 }

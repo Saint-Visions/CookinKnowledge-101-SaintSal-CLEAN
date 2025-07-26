@@ -1,5 +1,5 @@
 import TopNav from "@/components/TopNav";
-import GlobalFooter from "@/components/GlobalFooter";
+import GlobalFooter from "@/components/layout/GlobalFooter";
 
 export default function PartnerOnboardingPage() {
   return (

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function ChatPage() {
   const [messages, setMessages] = useState([
@@ -130,6 +131,7 @@ export default function ChatPage() {
           </div>
         </div>
       </div>
+      <GlobalFooter />
     </div>
   );
 }

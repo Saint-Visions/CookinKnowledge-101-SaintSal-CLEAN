@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import BuilderWrapper from '@/components/builder/BuilderComponent';
+import GlobalFooter from '@/components/layout/GlobalFooter';
 
 export default function UltimateBuilderDashboard() {
   const [activeModel, setActiveModel] = useState('homepage-hero');
@@ -325,6 +326,7 @@ export default function UltimateBuilderDashboard() {
           </div>
         </div>
       </div>
+      <GlobalFooter />
     </div>
   );
 }
