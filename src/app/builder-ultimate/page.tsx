@@ -329,7 +329,9 @@ export default function UltimateBuilderDashboard() {
             </div>
           </div>
         </div>
+      </div>
       </main>
+
       <GlobalFooter />
     </>
   );

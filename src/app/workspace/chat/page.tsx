@@ -136,6 +136,7 @@ export default function ChatPage() {
         </div>
       </div>
       <GlobalFooter />
+      <GlobalFooter />
     </>
   );
 }

@@ -280,6 +280,7 @@ export default function PartnerTechDashboard() {
         </div>
       </div>
       <GlobalFooter />
+      <GlobalFooter />
     </>
   );
 }
