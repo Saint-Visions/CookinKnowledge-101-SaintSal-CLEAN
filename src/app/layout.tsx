@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Metadata } from "next";
+import ClientAuditWrapper from "./ClientAuditWrapper";
 
 export const metadata: Metadata = {
   title: "SaintVisionAI - Cookin' Knowledge",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         {children}
+        <ClientAuditWrapper />
       </body>
     </html>
   );
