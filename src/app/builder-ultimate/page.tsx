@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import TopNav from "@/components/TopNav";
 import BuilderWrapper from '@/components/builder/BuilderComponent';
 import GlobalFooter from '@/components/layout/GlobalFooter';
+import Link from 'next/link';
 
 export default function UltimateBuilderDashboard() {
   const [activeModel, setActiveModel] = useState('homepage-hero');
@@ -114,9 +115,9 @@ export default function UltimateBuilderDashboard() {
             <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-black px-4 py-2 rounded-lg font-bold text-sm">
               {builderStatus === 'enterprise-ready' ? '🔥 ENTERPRISE ACTIVE' : '⏳ LOADING...'}
             </div>
-            <a href="/workspace" className="text-gray-300 hover:text-yellow-400 transition-colors">
+            <Link href="/workspace" className="text-gray-300 hover:text-yellow-400 transition-colors">
               ← Back to War Room
-            </a>
+            </Link>
           </div>
         </div>
 

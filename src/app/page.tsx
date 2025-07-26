@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import TopNav from "@/components/TopNav";
 import GlobalFooter from "@/components/layout/GlobalFooter";
 
@@ -6,11 +7,19 @@ export default function HomePage() {
     <>
       <TopNav />
       <main className="min-h-screen bg-black text-white">
-        {/* Hero Section - Clean Black */}
+        {/* Hero Section - Deep Neon Upgrade */}
         <section className="pt-32 pb-20 px-6 bg-black relative overflow-hidden">
+          {/* Deep Neon Background Effects */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-20 left-10 w-96 h-96 rounded-full bg-gradient-to-r from-red-500 to-purple-600 blur-3xl"></div>
+            <div className="absolute top-40 right-20 w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 to-green-500 blur-3xl"></div>
+            <div className="absolute bottom-20 left-1/3 w-72 h-72 rounded-full bg-gradient-to-r from-yellow-500 to-red-500 blur-3xl"></div>
+            <div className="absolute top-60 left-1/2 w-64 h-64 rounded-full bg-gradient-to-r from-purple-500 to-blue-600 blur-3xl"></div>
+          </div>
+          
           <div className="max-w-6xl mx-auto text-center relative z-10">
             {/* Main Headline - Clean White */}
-            <h1 className="text-6xl md:text-7xl font-thin mb-8 leading-tight">
+            <h2 className="text-6xl md:text-7xl font-thin mb-8 leading-tight relative">
               <span className="text-white">
                 Responsible
               </span>
@@ -18,7 +27,7 @@ export default function HomePage() {
               <span className="text-white">
                 Intelligence
               </span>
-            </h1>
+            </h2>
 
             {/* Warm Welcome - Clean */}
             <div className="mb-8">
@@ -26,171 +35,121 @@ export default function HomePage() {
               <p className="text-xl text-gray-300">to the future of enterprise AI</p>
             </div>
 
-            {/* Value Proposition - Neon Highlights */}
+            {/* Value Proposition */}
             <p className="text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
               The most advanced AI platform that transforms businesses through
-              <span className="text-cyan-400 font-light drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]"> intelligent</span> automation,
-              <span className="text-purple-400 font-light drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]"> integration</span>, and
-              <span className="text-green-400 font-light drop-shadow-[0_0_10px_rgba(34,197,94,0.8)]"> enterprise</span>-grade 
-              <span className="text-yellow-400 font-light drop-shadow-[0_0_10px_rgba(250,204,21,0.8)]"> security</span>.
+              <span className="text-white font-light"> intelligent automation</span>,
+              <span className="text-white font-light"> seamless integration</span>, and
+              <span className="text-white font-light"> enterprise-grade security</span>.
             </p>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - Solid Gold */}
             <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8 mb-16">
               <a 
                 href="/workspace"
-                className="bg-white hover:bg-gray-100 text-black px-12 py-4 rounded-2xl font-medium text-lg transition-all transform hover:scale-105"
+                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-12 py-4 rounded-2xl font-light text-lg transform hover:scale-105 transition-all"
               >
                 🚀 Start Building
-              </a>
+              </Link>
               <a 
                 href="/pricing"
-                className="border border-gray-600 hover:border-gray-400 text-white px-12 py-4 rounded-2xl font-medium text-lg transition-all"
+                className="bg-white hover:bg-gray-100 text-black px-12 py-4 rounded-2xl font-light text-lg transition-all"
               >
                 View Pricing
-              </a>
+              </Link>
+            </div>
+
+            {/* Stats - Clean Boxes */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 backdrop-blur-sm hover:border-yellow-500 transition-all">
+                <div className="text-3xl font-thin text-white mb-2">$50M+</div>
+                <div className="text-gray-300">Revenue Managed</div>
+              </div>
+              <div className="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 backdrop-blur-sm hover:border-yellow-500 transition-all">
+                <div className="text-3xl font-thin text-white mb-2">10,000+</div>
+                <div className="text-gray-300">Enterprises Served</div>
+              </div>
+              <div className="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 backdrop-blur-sm hover:border-yellow-500 transition-all">
+                <div className="text-3xl font-thin text-white mb-2">99.9%</div>
+                <div className="text-gray-300">Uptime Guarantee</div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="py-20 px-6 bg-black">
-          <div className="max-w-6xl mx-auto">
-            {/* Where Technology Meets Excellence */}
+        {/* Features Section - Deep Neon Cards */}
+        <section className="py-20 px-6 bg-black relative overflow-hidden">
+          {/* Additional Background Neon */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-500/20 via-blue-500/20 to-green-500/20"></div>
+          </div>
+          
+          <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-thin text-white mb-6">
-                Where Technology Meets
-              </h2>
-              <h2 className="text-5xl md:text-6xl font-thin text-cyan-400 mb-8">
-                Excellence
-              </h2>
-              <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-                Revolutionizing industries through <span className="text-yellow-400 font-light">patented HACP™ technology</span>,
-                faith-guided innovation, and AI solutions that change lives across
-                healthcare, education, and enterprise.
-              </p>
-            </div>
-
-            {/* Meet SaintSal */}
-            <div className="text-center mb-16">
-              <h3 className="text-2xl text-cyan-400 mb-4">Meet SaintSal™</h3>
-              <p className="text-gray-400">Your AI companion leading the next generation of intelligent technology</p>
+              <h3 className="text-4xl font-thin text-white mb-4">Powered by HACP™ Technology</h3>
+              <p className="text-xl text-gray-300">Human-AI Connection Protocol (US Patent 10,290,222)</p>
             </div>
             
-            {/* Four Feature Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-              {/* HACP™ Protocol */}
-              <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-2xl p-6 hover:border-yellow-500 transition-all">
-                <div className="w-16 h-16 rounded-2xl bg-yellow-600/20 flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🧠</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* PartnerTech.ai - Red/Purple Neon */}
+              <div className="bg-gradient-to-br from-red-500/10 to-purple-600/10 border-2 border-red-500/40 rounded-2xl p-8 hover:border-red-400 hover:from-red-500/20 hover:to-purple-600/20 transition-all backdrop-blur-sm">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500/30 to-purple-600/30 border border-red-500/50 flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl drop-shadow-[0_0_10px_rgba(255,0,0,0.8)]">🤝</span>
                 </div>
-                <h4 className="text-xl font-light text-yellow-400 mb-3 text-center">HACP™ Protocol</h4>
-                <p className="text-gray-400 text-center text-sm">Patented adaptive AI that learns and responds with emotional intelligence</p>
+                <h4 className="text-2xl font-light text-white mb-4 text-center">PartnerTech.ai</h4>
+                <p className="text-gray-300 text-center">Enterprise CRM automation with GoHighLevel integration for seamless lead management.</p>
               </div>
 
-              {/* Enterprise Ready */}
-              <div className="bg-cyan-900/20 border border-cyan-600/30 rounded-2xl p-6 hover:border-cyan-500 transition-all">
-                <div className="w-16 h-16 rounded-2xl bg-cyan-600/20 flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🚀</span>
+              {/* War Room - Blue/Green Neon */}
+              <div className="bg-gradient-to-br from-blue-500/10 to-green-500/10 border-2 border-blue-500/40 rounded-2xl p-8 hover:border-blue-400 hover:from-blue-500/20 hover:to-green-500/20 transition-all backdrop-blur-sm">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500/30 to-green-500/30 border border-blue-500/50 flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl drop-shadow-[0_0_10px_rgba(0,0,255,0.8)]">⚡</span>
                 </div>
-                <h4 className="text-xl font-light text-cyan-400 mb-3 text-center">Enterprise Ready</h4>
-                <p className="text-gray-400 text-center text-sm">SOC 2 compliant with enterprise-grade security and scalability</p>
+                <h4 className="text-2xl font-light text-white mb-4 text-center">AI War Room</h4>
+                <p className="text-gray-300 text-center">Command center for business operations with real-time analytics and decision support.</p>
               </div>
 
-              {/* Faith-Guided */}
-              <div className="bg-green-900/20 border border-green-600/30 rounded-2xl p-6 hover:border-green-500 transition-all">
-                <div className="w-16 h-16 rounded-2xl bg-green-600/20 flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">💚</span>
+              {/* Saint Vision Institute - Yellow/Purple Neon */}
+              <div className="bg-gradient-to-br from-yellow-500/10 to-purple-500/10 border-2 border-yellow-500/40 rounded-2xl p-8 hover:border-yellow-400 hover:from-yellow-500/20 hover:to-purple-500/20 transition-all backdrop-blur-sm">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-500/30 to-purple-500/30 border border-yellow-500/50 flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl drop-shadow-[0_0_10px_rgba(255,255,0,0.8)]">🧠</span>
                 </div>
-                <h4 className="text-xl font-light text-green-400 mb-3 text-center">Faith-Guided</h4>
-                <p className="text-gray-400 text-center text-sm">Technology with soul - ethical AI designed to uplift humanity</p>
-              </div>
-
-              {/* Global Impact */}
-              <div className="bg-purple-900/20 border border-purple-600/30 rounded-2xl p-6 hover:border-purple-500 transition-all">
-                <div className="w-16 h-16 rounded-2xl bg-purple-600/20 flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🌍</span>
-                </div>
-                <h4 className="text-xl font-light text-purple-400 mb-3 text-center">Global Impact</h4>
-                <p className="text-gray-400 text-center text-sm">Transforming healthcare, education, and enterprise worldwide</p>
-              </div>
-            </div>
-
-            {/* Stats Row */}
-            <div className="bg-gray-900/50 border border-gray-700 rounded-2xl p-8 mb-16">
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
-                <div>
-                  <div className="text-3xl font-thin text-yellow-400 mb-2">$75M+</div>
-                  <div className="text-gray-400 text-sm">Patent Value</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-thin text-cyan-400 mb-2">24K+</div>
-                  <div className="text-gray-400 text-sm">Users Served</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-thin text-blue-400 mb-2">99.9%</div>
-                  <div className="text-gray-400 text-sm">Uptime SLA</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-thin text-green-400 mb-2">25+</div>
-                  <div className="text-gray-400 text-sm">AI Tools</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-thin text-purple-400 mb-2">100%</div>
-                  <div className="text-gray-400 text-sm">Purpose-Driven</div>
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="text-center mb-16">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                <a 
-                  href="/workspace"
-                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-12 py-4 rounded-2xl font-medium text-lg transition-all transform hover:scale-105"
-                >
-                  Start Cookin →
-                </a>
-                <a 
-                  href="/why"
-                  className="border border-cyan-400 hover:bg-cyan-400/10 text-cyan-400 px-12 py-4 rounded-2xl font-medium text-lg transition-all"
-                >
-                  ▶ Watch Our Story
-                </a>
-              </div>
-            </div>
-
-            {/* Icon Grid */}
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 text-center">
-              <div className="flex flex-col items-center">
-                <span className="text-3xl mb-2">⚡</span>
-                <span className="text-gray-400 text-sm">AI Tools</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl mb-2">🎯</span>
-                <span className="text-gray-400 text-sm">WarRoom</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl mb-2">📊</span>
-                <span className="text-gray-400 text-sm">Brokerage</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl mb-2">🧠</span>
-                <span className="text-gray-400 text-sm">Institute</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl mb-2">🛡️</span>
-                <span className="text-gray-400 text-sm">Legal</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl mb-2">🤝</span>
-                <span className="text-gray-400 text-sm">Support</span>
+                <h4 className="text-2xl font-light text-white mb-4 text-center">SV Institute</h4>
+                <p className="text-gray-300 text-center">Advanced AI research and development for next-generation enterprise solutions.</p>
               </div>
             </div>
           </div>
         </section>
 
-
+        {/* CTA Section - Final Neon Blast */}
+        <section className="py-20 px-6 bg-black relative overflow-hidden text-center">
+          {/* Epic Background Effects */}
+          <div className="absolute inset-0 opacity-15">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500/30 via-purple-500/30 via-blue-500/30 via-green-500/30 to-yellow-500/30"></div>
+            <div className="absolute top-10 left-10 w-60 h-60 rounded-full bg-gradient-to-r from-purple-500 to-blue-600 blur-3xl"></div>
+            <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-gradient-to-r from-red-500 to-yellow-500 blur-3xl"></div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto relative z-10">
+            <h3 className="text-4xl font-bold text-white mb-4">Ready to Transform Your Business?</h3>
+            <p className="text-xl text-gray-300 mb-8">Join the enterprises already revolutionizing their operations with SaintVision AI</p>
+            
+            <div className="flex justify-center gap-6">
+              <a 
+                href="/workspace"
+                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-8 py-4 rounded-xl text-lg transition-all transform hover:scale-105"
+              >
+                Get Started Now
+              </Link>
+              <a 
+                href="/institute"
+                className="bg-white hover:bg-gray-100 text-black font-semibold px-8 py-4 rounded-xl text-lg transition-all"
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
       <GlobalFooter />
     </>

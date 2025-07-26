@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { RouteAuditAlert, useRouteAuditor } from '../components/RouteAuditor';
 
 // 🔍 CLIENT AUDIT WRAPPER - Manages route auditing across the application
-export default function ClientAuditWrapper() {
+export default function ClientAuditWrapper({ children }: { children: React.ReactNode }) {
   const [isClient, setIsClient] = useState(false);
   const { auditCurrentPage, getAuditSummary, results } = useRouteAuditor();
 
@@ -28,8 +28,13 @@ export default function ClientAuditWrapper() {
   }, [results, getAuditSummary]);
 
   if (!isClient) {
-    return null;
+    return <>{children}</>;
   }
 
-  return <RouteAuditAlert />;
+  return (
+    <>
+      {children}
+      <RouteAuditAlert />
+    </>
+  );
 }

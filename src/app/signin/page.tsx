@@ -1,5 +1,6 @@
 import TopNav from "@/components/TopNav";
 import GlobalFooter from "@/components/layout/GlobalFooter";
+import Link from 'next/link';
 
 export default function SignInPage() {
   return (
@@ -41,9 +42,9 @@ export default function SignInPage() {
                   <input type="checkbox" className="rounded border-gray-600" />
                   <span className="ml-2 text-sm text-gray-400">Remember me</span>
                 </label>
-                <a href="#" className="text-sm text-white hover:text-gray-300">
+                <Link href="#" className="text-sm text-white hover:text-gray-300">
                   Forgot password?
-                </a>
+                </Link>
               </div>
               
               <button
@@ -57,9 +58,9 @@ export default function SignInPage() {
             <div className="mt-8 text-center">
               <p className="text-gray-400">
                 Don't have an account?{' '}
-                <a href="/signup" className="text-white hover:text-gray-300">
+                <Link href="/signup" className="text-white hover:text-gray-300">
                   Sign up
-                </a>
+                </Link>
               </p>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import TopNav from "@/components/TopNav";
 import GlobalFooter from "@/components/layout/GlobalFooter";
+import Link from 'next/link';
 
 export default function PartnerOnboardingPage() {
   return (
@@ -17,7 +18,7 @@ export default function PartnerOnboardingPage() {
             <li>💬 AI Help Center templates + prompt packs</li>
             <li>🧾 Legal, affiliate, and dashboard access docs</li>
           </ul>
-          <p className="text-yellow-300 mt-6 text-sm">Need assistance? Contact <a href="/help" className="underline">Supersal Support</a></p>
+          <p className="text-yellow-300 mt-6 text-sm">Need assistance? Contact <Link href="/help" className="underline">Supersal Support</Link></p>
         </section>
       </main>
       <GlobalFooter />

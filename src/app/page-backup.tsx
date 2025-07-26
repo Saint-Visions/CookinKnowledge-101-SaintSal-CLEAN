@@ -1,3 +1,4 @@
+import Link from 'next/link';
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -180,14 +181,14 @@ export default function CookinKnowledgeHomepage() {
           </div>
           <div className="flex items-center space-x-8">
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="/about" className="text-white/70 hover:text-white text-sm font-medium transition-colors">Technology</a>
-              <a href="/enterprise" className="text-white/70 hover:text-white text-sm font-medium transition-colors">Enterprise</a>
-              <a href="/api" className="text-white/70 hover:text-white text-sm font-medium transition-colors">API</a>
-              <a href="/pricing" className="text-white/70 hover:text-white text-sm font-medium transition-colors">Pricing</a>
+              <Link href="/about" className="text-white/70 hover:text-white text-sm font-medium transition-colors">Technology</Link>
+              <Link href="/enterprise" className="text-white/70 hover:text-white text-sm font-medium transition-colors">Enterprise</Link>
+              <Link href="/api" className="text-white/70 hover:text-white text-sm font-medium transition-colors">API</Link>
+              <Link href="/pricing" className="text-white/70 hover:text-white text-sm font-medium transition-colors">Pricing</Link>
             </nav>
-            <a href="/dashboard" className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-2.5 rounded-md transition-colors text-sm">
+            <Link href="/dashboard" className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-2.5 rounded-md transition-colors text-sm">
               Launch Platform
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -218,13 +219,13 @@ export default function CookinKnowledgeHomepage() {
                 className="bg-gradient-to-r from-gold to-yellow-400 hover:from-yellow-400 hover:to-gold text-black font-bold px-8 py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-2xl shadow-gold/25"
               >
                 Experience SaintSal™
-              </a>
+              </Link>
               <a 
                 href="/enterprise" 
                 className="border border-gold/40 hover:border-gold text-gold hover:text-white font-medium px-8 py-4 rounded-lg transition-all backdrop-blur-sm hover:bg-gold/10"
               >
                 Enterprise Solutions
-              </a>
+              </Link>
             </div>
             <p className="text-white/40 text-sm font-light">
               Trusted by enterprises worldwide • Patent US 10,290,222 • SOC 2 Compliant

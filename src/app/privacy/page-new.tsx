@@ -1,5 +1,6 @@
 import TopNav from "@/components/TopNav";
 import GlobalFooter from "@/components/layout/GlobalFooter";
+import Link from 'next/link';
 
 export default function PrivacyPolicyPage() {
   return (
@@ -47,7 +48,7 @@ export default function PrivacyPolicyPage() {
             <div className="bg-gray-800/60 backdrop-blur-xl rounded-2xl border border-[#F4D03F]/20 p-8">
               <p className="text-gray-300">
                 For a full breakdown of AI ethics and data use, see our{" "}
-                <a href="/disclosures" className="text-[#F4D03F] hover:text-[#F4D03F]/80 underline transition-colors">Disclosures</a>.
+                <Link href="/disclosures" className="text-[#F4D03F] hover:text-[#F4D03F]/80 underline transition-colors">Disclosures</Link>.
               </p>
             </div>
           </div>

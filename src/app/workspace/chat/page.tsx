@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
+import Link from 'next/link';
 
 export default function ChatPage() {
   const [messages, setMessages] = useState([
@@ -80,9 +81,9 @@ export default function ChatPage() {
               </div>
             </div>
             <nav className="flex items-center space-x-6">
-              <a href="/workspace" className="text-white/70 hover:text-gold transition-colors text-sm">War Room</a>
-              <a href="/workspace/chatgpt" className="text-white/70 hover:text-gold transition-colors text-sm">ChatGPT Mode</a>
-              <a href="/" className="text-white/70 hover:text-gold transition-colors text-sm">Home</a>
+              <Link href="/workspace" className="text-white/70 hover:text-gold transition-colors text-sm">War Room</Link>
+              <Link href="/workspace/chatgpt" className="text-white/70 hover:text-gold transition-colors text-sm">ChatGPT Mode</Link>
+              <Link href="/" className="text-white/70 hover:text-gold transition-colors text-sm">Home</Link>
             </nav>
           </div>
         </header>

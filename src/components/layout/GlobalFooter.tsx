@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 interface GlobalFooterProps {
   currentPage?: string;
 }
@@ -31,18 +33,18 @@ export default function GlobalFooter({ currentPage }: GlobalFooterProps) {
           <div className="space-y-4">
             <h4 className="text-white font-medium">Legal & Compliance</h4>
             <div className="space-y-2">
-              <a href="/privacy" className="block text-gray-400 hover:text-green-400 text-sm transition-colors">
+              <Link href="/privacy" className="block text-gray-400 hover:text-green-400 text-sm transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/terms" className="block text-gray-400 hover:text-cyan-400 text-sm transition-colors">
+              </Link>
+              <Link href="/terms" className="block text-gray-400 hover:text-cyan-400 text-sm transition-colors">
                 Terms of Service
-              </a>
-              <a href="/disclosures" className="block text-gray-400 hover:text-purple-400 text-sm transition-colors">
+              </Link>
+              <Link href="/disclosures" className="block text-gray-400 hover:text-purple-400 text-sm transition-colors">
                 AI Disclosure
-              </a>
-              <a href="/security" className="block text-gray-400 hover:text-red-400 text-sm transition-colors">
+              </Link>
+              <Link href="/security" className="block text-gray-400 hover:text-red-400 text-sm transition-colors">
                 Security Policy
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -50,18 +52,18 @@ export default function GlobalFooter({ currentPage }: GlobalFooterProps) {
           <div className="space-y-4">
             <h4 className="text-white font-medium">Platform & Technology</h4>
             <div className="space-y-2">
-              <a href="/institute" className="block text-gray-400 hover:text-gold text-sm transition-colors">
+              <Link href="/institute" className="block text-gray-400 hover:text-gold text-sm transition-colors">
                 SVT Institute (R&D)
-              </a>
-              <a href="/svg" className="block text-gray-400 hover:text-blue-400 text-sm transition-colors">
+              </Link>
+              <Link href="/svg" className="block text-gray-400 hover:text-blue-400 text-sm transition-colors">
                 Saint Vision Group
-              </a>
-              <a href="/partnertech" className="block text-gray-400 hover:text-cyan-400 text-sm transition-colors">
+              </Link>
+              <Link href="/partnertech" className="block text-gray-400 hover:text-cyan-400 text-sm transition-colors">
                 PartnerTech.ai
-              </a>
-              <a href="/api/docs" className="block text-gray-400 hover:text-green-400 text-sm transition-colors">
+              </Link>
+              <Link href="/api/docs" className="block text-gray-400 hover:text-green-400 text-sm transition-colors">
                 API Documentation
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -69,18 +71,18 @@ export default function GlobalFooter({ currentPage }: GlobalFooterProps) {
           <div className="space-y-4">
             <h4 className="text-white font-medium">Enterprise & Support</h4>
             <div className="space-y-2">
-              <a href="/pricing" className="block text-gray-400 hover:text-gold text-sm transition-colors">
+              <Link href="/pricing" className="block text-gray-400 hover:text-gold text-sm transition-colors">
                 Enterprise Pricing
-              </a>
-              <a href="/help" className="block text-gray-400 hover:text-blue-400 text-sm transition-colors">
+              </Link>
+              <Link href="/help" className="block text-gray-400 hover:text-blue-400 text-sm transition-colors">
                 Help Center
-              </a>
-              <a href="/attribution" className="block text-gray-400 hover:text-purple-400 text-sm transition-colors">
+              </Link>
+              <Link href="/attribution" className="block text-gray-400 hover:text-purple-400 text-sm transition-colors">
                 Attribution
-              </a>
-              <a href="/partner" className="block text-gray-400 hover:text-green-400 text-sm transition-colors">
+              </Link>
+              <Link href="/partner" className="block text-gray-400 hover:text-green-400 text-sm transition-colors">
                 Partner Program
-              </a>
+              </Link>
             </div>
           </div>
         </div>

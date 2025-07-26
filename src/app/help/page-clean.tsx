@@ -1,4 +1,5 @@
 import GlobalFooter from '@/components/layout/GlobalFooter';
+import Link from 'next/link';
 
 export default function HelpPage() {
   return (
@@ -49,12 +50,12 @@ export default function HelpPage() {
           </p>
           
           <div className="flex justify-center gap-4">
-            <a href="mailto:support@saintvision.ai" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-6 py-3 rounded-xl font-semibold transition-all">
+            <Link href="mailto:support@saintvision.ai" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-6 py-3 rounded-xl font-semibold transition-all">
               Contact Support
-            </a>
-            <a href="/docs" className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all">
+            </Link>
+            <Link href="/docs" className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all">
               View Docs
-            </a>
+            </Link>
           </div>
         </div>
       </div>

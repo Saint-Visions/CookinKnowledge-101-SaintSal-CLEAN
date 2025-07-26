@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 interface GlobalHeaderProps {
   currentPage: string;
   showFullNav?: boolean;
@@ -66,7 +68,7 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                 }`}
               >
                 Home
-              </a>
+              </Link>
               <a 
                 href="/why" 
                 className={`text-sm font-medium transition-colors ${
@@ -74,7 +76,7 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                 }`}
               >
                 Why Us
-              </a>
+              </Link>
               <a 
                 href="/enterprise" 
                 className={`text-sm font-medium transition-colors ${
@@ -82,7 +84,7 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                 }`}
               >
                 Enterprise
-              </a>
+              </Link>
               <a 
                 href="/pricing" 
                 className={`text-sm font-medium transition-colors ${
@@ -90,7 +92,7 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                 }`}
               >
                 Pricing
-              </a>
+              </Link>
               <a 
                 href="/help" 
                 className={`text-sm font-medium transition-colors ${
@@ -98,7 +100,7 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                 }`}
               >
                 Help
-              </a>
+              </Link>
             </nav>
             
             {currentPage === 'signin' || currentPage === 'signup' ? (
@@ -110,13 +112,13 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                   }`}
                 >
                   Sign In
-                </a>
+                </Link>
                 <a 
                   href="/signup" 
                   className="bg-gold hover:bg-gold/90 text-black font-semibold px-6 py-2.5 rounded-md transition-colors text-sm"
                 >
                   Sign Up
-                </a>
+                </Link>
               </div>
             ) : (
               <div className="flex items-center space-x-4">
@@ -125,13 +127,13 @@ export default function GlobalHeader({ currentPage, showFullNav = true }: Global
                   className="text-white/70 hover:text-white text-sm font-medium transition-colors"
                 >
                   Sign In
-                </a>
+                </Link>
                 <a 
                   href="/dashboard" 
                   className="bg-gold hover:bg-gold/90 text-black font-semibold px-6 py-2.5 rounded-md transition-colors text-sm"
                 >
                   Launch Platform
-                </a>
+                </Link>
               </div>
             )}
           </div>

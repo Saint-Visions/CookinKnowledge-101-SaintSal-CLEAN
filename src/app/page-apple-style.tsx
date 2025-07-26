@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import TopNav from "@/components/TopNav";
 import GlobalFooter from "@/components/layout/GlobalFooter";
 
@@ -49,13 +50,13 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-12 py-4 rounded-2xl font-light text-lg transform hover:scale-105 transition-all"
               >
                 🚀 Start Building
-              </a>
+              </Link>
               <a 
                 href="/pricing"
                 className="bg-white hover:bg-gray-100 text-black px-12 py-4 rounded-2xl font-light text-lg transition-all"
               >
                 View Pricing
-              </a>
+              </Link>
             </div>
 
             {/* Stats - Clean Boxes */}
@@ -139,13 +140,13 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-8 py-4 rounded-xl text-lg transition-all transform hover:scale-105"
               >
                 Get Started Now
-              </a>
+              </Link>
               <a 
                 href="/institute"
                 className="bg-white hover:bg-gray-100 text-black font-semibold px-8 py-4 rounded-xl text-lg transition-all"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </section>

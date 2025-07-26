@@ -1,5 +1,6 @@
 import TopNav from "@/components/TopNav";
 import GlobalFooter from "@/components/layout/GlobalFooter";
+import Link from 'next/link';
 
 export default function SignUpPage() {
   return (
@@ -51,7 +52,7 @@ export default function SignUpPage() {
                 <label className="flex items-center">
                   <input type="checkbox" className="rounded border-gray-600" />
                   <span className="ml-2 text-sm text-gray-400">
-                    I agree to the <a href="/terms" className="text-white hover:text-gray-300">Terms of Service</a> and <a href="/privacy" className="text-white hover:text-gray-300">Privacy Policy</a>
+                    I agree to the <Link href="/terms" className="text-white hover:text-gray-300">Terms of Service</Link> and <Link href="/privacy" className="text-white hover:text-gray-300">Privacy Policy</Link>
                   </span>
                 </label>
               </div>
@@ -67,9 +68,9 @@ export default function SignUpPage() {
             <div className="mt-8 text-center">
               <p className="text-gray-400">
                 Already have an account?{' '}
-                <a href="/signin" className="text-white hover:text-gray-300">
+                <Link href="/signin" className="text-white hover:text-gray-300">
                   Sign in
-                </a>
+                </Link>
               </p>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function SidebarNav() {
   return (
@@ -55,46 +56,46 @@ export default function SidebarNav() {
       {/* Sidebar Links */}
       <nav className="relative z-10 px-4 space-y-2 text-sm font-medium">
         <div className="text-xs text-gray-500 uppercase tracking-wider px-2 py-1">Workspace</div>
-        <a href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        <Link href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-blue-400">🤖</span>
           <span className="group-hover:text-gold transition">AI Companion</span>
-        </a>
-        <a href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        </Link>
+        <Link href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-yellow-400">⚡</span>
           <span className="group-hover:text-gold transition">Quick Tools</span>
-        </a>
-        <a href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        </Link>
+        <Link href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-green-400">🔄</span>
           <span className="group-hover:text-gold transition">Smart Pipeline</span>
-        </a>
-        <a href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        </Link>
+        <Link href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-purple-400">📝</span>
           <span className="group-hover:text-gold transition">Notes & Prompts</span>
-        </a>
+        </Link>
 
         <div className="text-xs text-gray-500 uppercase tracking-wider px-2 py-1 mt-6">Analytics</div>
-        <a href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        <Link href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-blue-400">📊</span>
           <span className="group-hover:text-gold transition">Dashboard</span>
-        </a>
-        <a href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        </Link>
+        <Link href="/workspace" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-green-400">📈</span>
           <span className="group-hover:text-gold transition">Productivity</span>
-        </a>
+        </Link>
 
         <div className="text-xs text-gray-500 uppercase tracking-wider px-2 py-1 mt-6">Platform</div>
-        <a href="/" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        <Link href="/" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-yellow-400">🏠</span>
           <span className="group-hover:text-gold transition">Home</span>
-        </a>
-        <a href="/institute" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        </Link>
+        <Link href="/institute" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-purple-400">🏛️</span>
           <span className="group-hover:text-gold transition">Institute</span>
-        </a>
-        <a href="/pricing" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
+        </Link>
+        <Link href="/pricing" className="flex items-center space-x-3 px-3 py-2 hover:bg-gray-800/50 rounded-md transition group">
           <span className="text-gold">⚡</span>
           <span className="group-hover:text-gold transition">Upgrade</span>
-        </a>
+        </Link>
       </nav>
 
       {/* Signed-In Footer */}

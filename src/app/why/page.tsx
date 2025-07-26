@@ -2,6 +2,7 @@
 
 import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
+import Link from 'next/link';
 
 export default function WhyUsPage() {
   return (
@@ -74,7 +75,7 @@ export default function WhyUsPage() {
             >
               Experience The Difference
               <span className="ml-2">→</span>
-            </a>
+            </Link>
           </div>
 
           {/* Problem Section */}
@@ -316,13 +317,13 @@ export default function WhyUsPage() {
                 className="bg-gradient-to-r from-gold to-orange-500 text-black font-bold px-8 py-4 rounded-2xl transition-all hover:scale-105 shadow-2xl shadow-gold/25"
               >
                 Start Your Journey Now
-              </a>
+              </Link>
               <a 
                 href="/help" 
                 className="border border-gray-600 hover:border-gold text-gray-300 hover:text-white font-medium px-8 py-4 rounded-2xl transition-all backdrop-blur-sm hover:bg-gray-800/50"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">

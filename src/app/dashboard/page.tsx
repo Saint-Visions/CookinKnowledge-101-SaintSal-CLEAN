@@ -2,6 +2,7 @@
 
 import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
+import Link from "next/link";
 
 export default function DashboardPage() {
   return (
@@ -46,12 +47,12 @@ export default function DashboardPage() {
           <h2 className="text-2xl font-bold mb-6">Quick Actions</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a href="/workspace" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-6 py-4 rounded-xl font-semibold text-center transition-all">
+            <Link href="/workspace" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-6 py-4 rounded-xl font-semibold text-center transition-all">
               Open Workspace
-            </a>
-            <a href="/builder" className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-4 rounded-xl font-semibold text-center transition-all">
+            </Link>
+            <Link href="/builder" className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-4 rounded-xl font-semibold text-center transition-all">
               Page Builder
-            </a>
+            </Link>
           </div>
         </div>
       </main>

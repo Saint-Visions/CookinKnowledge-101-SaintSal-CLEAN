@@ -1,3 +1,4 @@
+import Link from 'next/link';
 'use client';
 
 import { useState } from 'react';
@@ -140,9 +141,9 @@ export default function Home() {
             <span className="text-sm text-gray-400">Welcome to your AI-powered business control room</span>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="/workspace" className="text-gold hover:text-gold/80 text-sm font-medium">War Room</a>
-            <a href="/workspace/chat" className="text-white/70 hover:text-white text-sm">Straight Chat</a>
-            <a href="/workspace/chatgpt" className="text-white/70 hover:text-white text-sm">SaintGPT™</a>
+            <Link href="/workspace" className="text-gold hover:text-gold/80 text-sm font-medium">War Room</Link>
+            <Link href="/workspace/chat" className="text-white/70 hover:text-white text-sm">Straight Chat</Link>
+            <Link href="/workspace/chatgpt" className="text-white/70 hover:text-white text-sm">SaintGPT™</Link>
           </div>
         </div>
 

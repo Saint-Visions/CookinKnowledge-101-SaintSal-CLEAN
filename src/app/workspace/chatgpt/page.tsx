@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
+import Link from 'next/link';
 
 export default function ChatGPTPage() {
   const [messages, setMessages] = useState([
@@ -78,9 +79,9 @@ export default function ChatGPTPage() {
               </div>
             </div>
             <nav className="flex items-center space-x-6">
-              <a href="/workspace" className="text-white/70 hover:text-gold transition-colors text-sm">War Room</a>
-              <a href="/workspace/chat" className="text-white/70 hover:text-gold transition-colors text-sm">Straight Chat</a>
-              <a href="/" className="text-white/70 hover:text-gold transition-colors text-sm">Home</a>
+              <Link href="/workspace" className="text-white/70 hover:text-gold transition-colors text-sm">War Room</Link>
+              <Link href="/workspace/chat" className="text-white/70 hover:text-gold transition-colors text-sm">Straight Chat</Link>
+              <Link href="/" className="text-white/70 hover:text-gold transition-colors text-sm">Home</Link>
             </nav>
           </div>
         </header>
