@@ -1,85 +1,65 @@
 import TopNav from "@/components/TopNav";
 import GlobalFooter from '@/components/layout/GlobalFooter';
 import Link from 'next/link';
+import GlobalFooter from "@/components/GlobalFooter";
 
-export default function HelpPage() {
+
+export default function Help() {
   return (
     <>
       <TopNav />
-      <main className="min-h-screen bg-black text-white">
-        <div className="bg-gray-900/60 backdrop-blur-xl border-b border-gray-700 pt-32 pb-8 px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg">
-                  <span className="text-2xl">❓</span>
-                </div>
-                <div>
-                  <h1 className="text-2xl font-bold text-white">Help Center</h1>
-                  <p className="text-gray-400">Support and documentation</p>
-                </div>
+      <main className="min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-12">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl font-bold text-gray-900 mb-8">
+              Help Center
+            </h1>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Getting Started
+                </h2>
+                <ul className="space-y-3 text-gray-600">
+                  <li>• Setting up your account</li>
+                  <li>• Understanding tier levels</li>
+                  <li>• Basic features overview</li>
+                  <li>• First conversation tips</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Billing & Subscriptions
+                </h2>
+                <ul className="space-y-3 text-gray-600">
+                  <li>• Upgrading your plan</li>
+                  <li>• Payment methods</li>
+                  <li>• Subscription management</li>
+                  <li>• Refund policy</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-semibold text-orange-900 mb-3">
+                Need More Help?
+              </h3>
+              <p className="text-orange-800 mb-4">
+                Contact our support team for personalized assistance.
+              </p>
+              <div className="flex gap-4">
+                <button className="px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
+                  Contact Support
+                </button>
+                <a 
+                  href="/docs" 
+                  className="px-6 py-2 border border-orange-500 text-orange-500 rounded-lg hover:bg-orange-50 transition-colors"
+                >
+                  View Docs
+                </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="max-w-6xl mx-auto p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700">
-              <h2 className="text-2xl font-bold mb-4">Getting Started</h2>
-              <ul className="space-y-3 text-gray-300">
-                <li>• Create your account</li>
-                <li>• Set up your workspace</li>
-                <li>• Configure integrations</li>
-                <li>• Start building</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700">
-              <h2 className="text-2xl font-bold mb-4">Support</h2>
-              <ul className="space-y-3 text-gray-300">
-                <li>• Email: support@saintvision.ai</li>
-                <li>• Live chat available 24/7</li>
-                <li>• Documentation portal</li>
-                <li>• Community forums</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 bg-gray-800/50 rounded-2xl p-8 border border-gray-700 text-center">
-            <h2 className="text-2xl font-bold mb-4">Need More Help?</h2>
-            <p className="text-gray-300 mb-6">
-              Our support team is here to help you succeed with SaintVision AI.
-            </p>
-            
-            <div className="flex justify-center gap-4">
-              <button className="bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-xl font-medium transition-all">
-                Contact Support
-              </button>
-              <button className="border border-gray-600 hover:border-gray-400 text-white px-6 py-3 rounded-xl font-medium transition-all">
-                View Documentation
-              </button>
-            </div>
-          </div>
-        </div>
       </main>
-      <GlobalFooter />
-    </>
-  );
-}
-          
-          <div className="flex justify-center gap-4">
-            <Link href="mailto:support@saintvision.ai" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-6 py-3 rounded-xl font-semibold transition-all">
-              Contact Support
-            </Link>
-            <Link href="/docs" className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all">
-              View Docs
-            </Link>
-          </div>
-        </div>
-      </div>
-      </div>
-
       <GlobalFooter />
     </>
   );
