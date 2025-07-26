@@ -77,8 +77,9 @@ export default function HelpPage() {
           </div>
         </div>
       </div>
+      </div>
 
       <GlobalFooter />
-    </div>
+    </>
   );
 }
