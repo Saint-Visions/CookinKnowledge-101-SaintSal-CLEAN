@@ -1,0 +1,33 @@
+
+> rest-express@1.0.0 build
+> next build
+
+   ▲ Next.js 15.4.4
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/app/why/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m           )'
+    ,-[[36;1;4m/private/var/folders/mb/hs_2229s7wl5scxb0rnmy4240000gn/T/MicrosoftEdgeDownloads/fe0f7767-031a-4dc2-a6d0-a0ca09abb080/CookinKnowledge-101-SaintSal-CLEAN-main/src/app/why/page.tsx[0m:78:1]
+ [2m75[0m |                 >
+ [2m76[0m |                   Experience The Difference
+ [2m77[0m |                   <span className="ml-2">→</span>
+ [2m78[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m             </Link>
+ [2m79[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m           </div>
+ [2m80[0m |     
+ [2m81[0m |               {/* Problem Section */}
+ [2m82[0m |               <div className="mb-32">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/why/page.tsx
+
+
+> Build failed because of webpack errors

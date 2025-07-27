@@ -52,15 +52,15 @@ export default function HomePage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8 mb-16">
-              <a 
+              <Link 
                 href="/workspace"
                 className="bg-[#F4D03F] hover:bg-[#F4D03F]/90 text-black px-12 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-[#F4D03F]/20 transform hover:scale-105 transition-all"
               >
                 🚀 Start Building
               </Link>
-              <a 
+              <Link 
                 href="/pricing"
-                className="bg-gray-800/60 backdrop-blur-xl hover:bg-gray-700/60 text-white border-2 border-[#F4D03F]/30 hover:border-[#F4D03F]/50 px-12 py-4 rounded-2xl font-bold text-lg transition-all"
+                className="bg-transparent border-2 border-[#F4D03F]/50 hover:border-[#F4D03F] text-[#F4D03F] hover:text-white hover:bg-[#F4D03F]/10 px-12 py-4 rounded-2xl font-bold text-lg transition-all"
               >
                 View Pricing
               </Link>
@@ -135,13 +135,13 @@ export default function HomePage() {
                 className="bg-[#F4D03F] hover:bg-[#F4D03F]/90 text-black font-bold px-8 py-4 rounded-xl text-lg transition-all transform hover:scale-105"
               >
                 Get Started Now
-              </Link>
+              </a>
               <a 
                 href="/institute"
                 className="border-2 border-[#F4D03F]/50 text-[#F4D03F] hover:bg-[#F4D03F]/10 font-semibold px-8 py-4 rounded-xl text-lg transition-all"
               >
                 Learn More
-              </Link>
+              </a>
             </div>
           </div>
         </section>

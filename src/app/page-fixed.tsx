@@ -1,5 +1,5 @@
-import Link from 'next/link';
-'use client';
+
+"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
